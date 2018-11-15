@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Cepolc Evoluções</title>
+	<link rel="stylesheet" type="text/css" href="css/site.css">
+<head>
+<body>
+	<div class="menu">
+		<nav>
+			<ul>
+				<li><a href="">Evoluções</a></li>
+				<li><a href="">Telefones</a></li>
+				<li><a href="">Pesquisa</a></li>
+				<li><a href="">Cadastro</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<div class="evolucoes">
+		<span>Perícia acionada para o local</span>
+		<select>
+			<option value=".">.</option>
+			<option value=". Perito">. Perito</option>
+			<option value=". Perita">. Perita</option>
+			<option value=" através do Servidor"> através do Servidor</option>
+			<option value=" através do Investigador"> através do Investigador</option>
+			<option value=" através da Investigadora"> através da Investigadora</option>			
+		</select>
+
+		<input type = "text" class="nomeServidor" placeholder="Nome do Servidor...">
+		<input type = "text" class="maspServidor" placeholder="Masp:">
+		<button class="btCopiar">Copiar</button>
+
+ 	</div>
+
+ 	<div class="textoEvolucoes">
+ 		<textarea id="textoEvol" placeholder="Área para evoluções..."cols="45" rows="7"></textarea>
+ 		<textarea id="textoRascunho" placeholder="Texto para rascunho..." cols="45" rows="7"></textarea>
+ 		<button id="btSelect">Ctrl-c para copiar</button>
+ 	</div>
+	<script type="text/javascript" src="js/site.js"></script>
+</body>
+</html>

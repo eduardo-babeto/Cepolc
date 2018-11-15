@@ -1,0 +1,72 @@
+* {
+
+	margin:	0px;
+	padding: 0px;
+}
+
+body {
+
+
+}
+
+
+nav {
+
+
+
+}
+
+
+nav ul {
+	list-style-type:	none;
+	background-color:	#bbb;	
+}
+
+nav ul li {
+	display:			inline-block;
+	padding:			10px 25px;
+}
+
+nav a {
+	text-decoration:	none;
+	color:				#555;
+}
+
+nav li:hover{
+
+	background-color:	#ddd;
+}
+
+div.evolucoes {
+
+	
+	margin:				30px 5%;
+	padding:			30px;
+	background-color:	#dadada;
+	border:				1px solid gray;
+
+}
+
+div.evolucoes select, div.evolucoes input, div.evolucoes button, div.textoEvolucoes button {
+
+	padding:			5px 10px;
+	
+}
+
+div.textoEvolucoes textarea {
+	padding:			10px;
+	width:				40%;	
+}
+
+div.textoEvolucoes textarea:nth-child(1) {
+	margin-left:		5%;
+}
+
+div.textoEvolucoes textarea:nth-child(2) {
+	margin:				2% 5% 0 5%;	
+}
+
+div.textoEvolucoes button {
+	margin:				2% 0 0 5%;
+}
+
