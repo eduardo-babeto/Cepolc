@@ -19,7 +19,7 @@ nav {
 
 nav ul {
 	list-style-type:	none;
-	background-color:	#bbb;	
+	background-color:	#222;	
 }
 
 nav ul li {
@@ -29,15 +29,15 @@ nav ul li {
 
 nav a {
 	text-decoration:	none;
-	color:				#555;
+	color:				#ddd;
 }
 
 nav li:hover{
 
-	background-color:	#ddd;
+	background-color:	#555;
 }
 
-div.evolucoes {
+div.evolucoes, div.dados {
 
 	
 	margin:				30px 5%;
@@ -70,3 +70,25 @@ div.textoEvolucoes button {
 	margin:				2% 0 0 5%;
 }
 
+div.dados input {
+	padding:			15px;
+	width:				95%;
+	margin:				1% 1%;	
+	border:				1px solid #bbb;
+	font-size:			15px;
+}
+
+div.dados button {
+	padding:			7px;
+	margin:				1% 1% 0 1%;
+	font-size:			15px;
+}
+
+div.dados h2 {
+	text-align:			center;
+	border-bottom:		1px solid #777;
+	font-size:			1.8em;
+	padding:			6px 0;
+	margin:				0 4% 1% 1%;
+	font-family:		helvetica;
+}
