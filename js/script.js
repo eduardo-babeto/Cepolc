@@ -4,10 +4,17 @@ var select03 = document.getElementsByClassName("evolucoes")[0].getElementsByTagN
 var areaTexto = document.getElementsByClassName("textoEvolucoes")[0].getElementsByTagName("textarea")[0];
 var btSelecionar = document.getElementsByClassName("btSelect")[0];
 var btCopiar = document.getElementsByClassName("btCopiar");
+var camposMasp = document.getElementsByClassName("campoMasp");
+
+var pcmg;
 
 var mensagem = "";
 
-window.onload = atualiza_campos;
+window.addEventListener("load",function(){
+  var local = localStorage.getItem("pcmg");  
+  pcmg = JSON.parse(local);
+  atualiza_campos();
+});
 
 select01.addEventListener("change",function(){
   atualiza_campos();
@@ -132,6 +139,24 @@ btCopiar[5].addEventListener("click",function(){
   selecionar(1); // atualiza o campo de evolucoes e o seleciona
 
 });
+
+for (var i = 0; i < camposMasp.length;i++){  
+  camposMasp[i].addEventListener("keyup",function(e){
+    if(e.keyCode == 13){
+      var m = e.target.value;
+      e.target.previousElementSibling.value = pesquisa_masp(m);      
+    }    
+  });
+}
+
+function pesquisa_masp(m){  
+  for (var i=0;i < pcmg.servidores.length;i++){
+    if (pcmg.servidores[i].masp == m){
+      return pcmg.servidores[i].nome;
+    }
+  }
+  return "";
+}
 
 btSelecionar.addEventListener("click", selecionar);
 
