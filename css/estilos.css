@@ -1,0 +1,121 @@
+* {
+	margin:		0;
+	padding:	0;
+}
+
+body {
+	background-color: #FeFeFe;
+}
+
+div.menu {
+	position:		fixed;
+	top:			0;
+	width:			100%;
+}
+
+div.menu nav {
+	background-color: 	RGBA(0,0,0,0.75);
+}
+
+div.menu nav ul {
+	
+	
+}	
+
+div.menu nav ul li {
+	padding: 15px;
+	display:		inline-block;	
+}
+
+div.menu nav ul li:hover{
+	background-color:	#555;
+
+}
+
+div.menu nav ul li a {
+	text-decoration:	none;
+	color:			#eee;
+}
+
+div.subHeader{
+
+	margin:			7% 5% 2% 5%;
+	border-bottom:		1px solid gray; 
+	color:			#444;
+	text-align:		center;
+	
+}
+
+
+div.evolucoes {
+	background-color:	#ddd;
+	padding:		15px;	
+	margin:			1.5% 5%;
+	border:			1px solid gray;
+}
+
+div.evolucoes input, div.evolucoes select, div.evolucoes button {
+	padding:		1.5px 10px;
+	margin-left:		5px;
+	margin-top:		7px;
+}
+
+div.textoEvolucoes textarea {
+	width: 			38%;
+	padding:		10px;
+}
+
+div.textoEvolucoes textarea:nth-child(1) {
+	margin-left:		5%;
+}
+
+div.textoEvolucoes textarea:nth-child(2) {
+	margin:			1% 5% 0 5%;
+}
+
+button.btSelect {
+	width:			40.5%;
+	margin:			1% 30% 2% 5%;
+	padding:			7px 10px;	
+}
+
+#entrada input {
+	width:			90%;
+	padding:			10px 5px;
+	margin:			0.81% 5%;
+	border:			1px solid #ddd;
+	font-size:			14px;
+}
+
+#entrada button {
+  	padding:			5px;
+	margin-left:		5%;
+	margin-bottom:		0.5%;
+
+}
+
+#tabela  {
+	border-collapse:		collapse;
+	width:			90%
+	border:			1px solid #ddd;
+	font-size:			16px;
+	margin:			1% 5%;
+}
+
+#tabela th, #tabela td {
+	text-align:			center;
+	padding:			10px;
+	border:			1px solid #ddd;	
+	
+}
+
+
+
+#tabela tr:nth-child(odd) {
+	background-color:		#f1f1f1;
+}
+
+#tabela tr:hover {
+	background-color:		#dcdcdc;
+}
+

@@ -1,30 +1,34 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<title>Cadastro</title>
-	<link rel="stylesheet" type="text/css" href="css/site.css">
+<head>  
+  <meta charset="UTF-8">
+  <title>Cadastro</title>
+  <link rel="stylesheet" type="text/css" href="css/estilos.css">
 </head>
 <body>
-	<div class="menu">
-		<nav>
-			<ul>				
-				<li><a href="telefones.html">Telefones</a></li>
-				<li><a href="evolucoes.html">Evoluções</a></li>
-				<li><a href="pesquisa.html">Pesquisa</a></li>
-				<li><a href="cadastro.html">Cadastro</a></li>
-			</ul>
-		</nav>
-	</div>
-	<div class ="dados">
-		<h2>Dados do Servidor</h2>
-		<input type="text" placeholder="Nome:">
-		<input type="text" placeholder="Carreira:">
-		<input type="text" placeholder="Masp:">
-		<input type="text" placeholder="Delegacia:">
-		<input type="text" placeholder="Telefone:">
-		<button>ok</button>
-	</div>
-	<script src="js/cadastro.js" type="text/javascript"></script>
+  <div class="menu">
+    <nav>
+	<ul>
+	  <li><a href="index.html">Telefones</a></li>
+	  <li><a href="evolucoes.html">Evoluções</a></li>
+	  <li><a href="cadastro.html">Cadastro</a></li>
+	  <li><a href="pesquisas.html">Pesquisas</a></li>
+	</ul>
+    </nav>
+  </div>
+  
+  <div class="subHeader">
+    <h1 id="pesquisar">Cadastro</h1>
+  </div>
+
+  <div id="entrada">]
+    <input type="text" placeholder="Nome:">
+    <input type="text" placeholder="Carreira:">
+    <input type="text" placeholder="Delegacia:">
+    <input type="text" placeholder="Masp:">
+    <input type="text" placeholder="Telefone:">
+    <button id="btnOk">ok</button>
+  </div>
+  <script type="text/javascript" src="js/cadastro.js"></script>
 </body>
 </html>

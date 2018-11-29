@@ -1,44 +1,168 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<title>Evoluções</title>
-	<link rel="stylesheet" type="text/css" href="css/site.css">
+<head>  
+  <meta charset="UTF-8">
+  <title>Evoluções</title>
+  <link rel="stylesheet" type="text/css" href="css/estilos.css">
 </head>
 <body>
-	<div class="menu">
-		<nav>
-			<ul>
-				<li><a href="telefones.html">Telefones</a></li>
-				<li><a href="evolucoes.html">Evoluções</a></li>				
-				<li><a href="pesquisa.html">Pesquisa</a></li>
-				<li><a href="cadastro.html">Cadastro</a></li>
-			</ul>
-		</nav>
-	</div>
+  <div class="menu">
+    <nav>
+	<ul>
+	  <li><a href="index.html">Telefones</a></li>
+	  <li><a href="evolucoes.html">Evoluções</a></li>
+	  <li><a href="cadastro.html">Cadastro</a></li>
+	  <li><a href="pesquisas.html">Pesquisas</a></li>
+	</ul>
+    </nav>
+  </div>
+  
+  <div class="subHeader">
+    <h1>Evoluções</h1>
+  </div>
 
-	<div class="evolucoes">
-		<span>Perícia acionada para o local</span>
-		<select>
-			<option value=".">.</option>
-			<option value=". Perito">. Perito</option>
-			<option value=". Perita">. Perita</option>
-			<option value=" através do Servidor"> através do Servidor</option>
-			<option value=" através do Investigador"> através do Investigador</option>
-			<option value=" através da Investigadora"> através da Investigadora</option>			
-		</select>
+  <!--************************ PRÓXIMA EVOLUÇÃO ************************-->
 
-		<input type = "text" class="nomeServidor" placeholder="Nome do Servidor...">
-		<input type = "text" class="maspServidor" placeholder="Masp:">
-		<button class="btCopiar">Copiar</button>
+  <div class="evolucoes">
+    <input type = "text" size="22" placeholder="Delegacia responsável:">
+    <select>
+	<option value="O Investigador">O Investigador</option>
+	<option value="A Investigadora">A Investigadora</option>
+	<option value="O Escrivão">O Escrivão</option>
+	<option value="A Escrivã">A Escrivã</option>
+	<option value="O Servidor">O Servidor</option>
+	<option value="A Servidora">A Servidora</option>
+	<option value="O Delegado">O Delegado</option>
+	<option value="A Delegada">A Delegada</option>
+    </select>    
+    <input type="text" placeholder="Nome:">
+    <input type="text" placeholder="Masp:" size="10">
+    <select>
+	<option value="informou ao Delegado">informou ao Delegado</option>
+	<option value="informou à Delegada">informou à Delegada</option>
+	<option value="informou ao Inspetor">informou ao Inspetor</option>
+	<option value="informou à Inspetora">informou à Inspetora</option>
+    <select>
+    <input type="text" placeholder="Nome:">
+    <input type="text" placeholder="Masp:" size="10">
+    <select>
+	<option value="DETERMINOU PERÍCIA">DETERMINOU PERÍCIA</option>
+	<option value="DISPENSOU PERÍCIA">DISPENSOU PERÍCIA</option>
 
- 	</div>
+    <select>
+    <span>em razão do histórico</span>
+    <select>
+	<option value=".">.</option>
+	<option value=" (local não preservado)."> (local não preservado).</option>
+	<option value=" (não há vestígios).">(não há vestígios).</option>
+	<option value=" (lesões leves).">(lesões leves).</option>
+	<option value=" (local não preservado, lesões leves).">(local não preservado, lesões leves).</option>
+    <select>
+    <button class="btCopiar">Copiar</button>
+  </div>
 
- 	<div class="textoEvolucoes">
- 		<textarea id="textoEvol" placeholder="Área para evoluções..."cols="45" rows="7"></textarea>
- 		<textarea id="textoRascunho" placeholder="Texto para rascunho..." cols="45" rows="7"></textarea>
- 		<button id="btSelect">Ctrl-c para copiar</button>
- 	</div>
-	<script type="text/javascript" src="js/site.js"></script>
+  <!--************************ PRÓXIMA EVOLUÇÃO ************************-->
+
+  <div class="evolucoes">
+    <span>Perícia acionada</span>
+    <select>
+	<option value=".">.</option>
+	<option value=". Perito">. Perito</option>
+	<option value=". Perita">. Perita</option>
+	<option value=" através do Servidor"> através do Servidor</option>
+	<option value=" através da Servidora"> através da Servidora</option>
+	<option value=" através do Investigador"> através do Investigador</option>
+	<option value=" através da Investigadora"> através da Investigadora</option>
+    </select>
+    <input type="text" placeholder="Nome:">
+    <input type="text" placeholder="Masp:" size="10">
+    <button class="btCopiar">Copiar</button>
+  </div>
+  
+  <!--************************ PRÓXIMA EVOLUÇÃO ************************-->
+
+  <div class="evolucoes">
+    <select>
+
+	<option value="O Perito">O Perito</option>
+	<option value="A Perita">A Perita</option>
+	<option value="O Servidor">O Servidor</option>
+	<option value="A Servidora">A Servidora</option>
+	<option value="O Investigador">O Investigador</option>
+	<option value="A Investigadora">A Investigadora</option>
+    </select>
+    <input type="text" placeholder="Nome:">
+    <input type="text" placeholder="Masp:" size="10">
+    <span>informou que a PERÍCIA NÃO IRÁ em razão do histórico</span>
+    <select>
+	<option value=".">.</option>
+	<option value=" (local não preservado)."> (local não preservado).</option>
+	<option value=" (lesões leves).">(lesões leves).</option>
+	<option value=" (local não preservado, lesões leves).">(local não preservado, lesões leves).</option>
+    <select>
+    <span>Apenas VISTORIA POSTERIOR à critério da Autoridade Policial.</span>
+    <button class="btCopiar">Copiar</button>
+  </div>
+  <!--************************ PRÓXIMA EVOLUÇÃO ************************-->
+
+  <div class="evolucoes">
+    <select>
+	<option value="O IML/BH">O IML/BH</option>
+	<option value="O IML/Betim">O IML/Betim</option>
+    </select>
+    <span>confirmou a entrega do corpo</span>
+    <select>
+        <option value=" através da Servidora"> através da Servidora</option>
+	<option value=" através do Servidor"> através do Servidor</option>
+	<option value=" através do Investigador"> através do Investigador</option>
+	<option value=" através da Investigadora"> através da Investigadora</option>
+    </select>
+    <input type="text" placeholder="Nome:">
+    <input type="text" placeholder="Masp:" size="10">
+    <button class="btCopiar">Copiar</button>
+  </div>
+  
+  <!--************************ PRÓXIMA EVOLUÇÃO ************************-->
+
+  <div class="evolucoes">
+    <input type="text" size="22" placeholder="Delegacia Responsável:">
+    <span>cientificada através</span>
+    <select>
+	<option value="do Investigador">do Investigador</option>
+	<option value="da Investigadora">da Investigadora</option>
+	<option value="do Escrivão">do Escrivão</option>
+	<option value="da Escrivã">da Escrivã</option>
+	<option value="do Servidor">do Servidor</option>
+	<option value="da Servidora">da Servidora</option>
+	<option value="do Delegado">do Delegado</option>
+	<option value="da Delegada">da Delegada</option>
+    </select>    
+    <input type="text" placeholder="Nome:">
+    <input type="text" placeholder="Masp:" size="10">
+    <button class="btCopiar">Copiar</button>
+  </div>
+  
+  <!--************************ PRÓXIMA EVOLUÇÃO ************************-->
+  
+
+  <div class="evolucoes">
+    <select>
+	<option value="Perícia">Perícia</option>
+	<option value="Rabecão">Rabecão</option>
+	<option value="Delegacia de Área">Delegacia de Área</option>
+    </select>
+    <span>solicita telefone da Guarnição da PM no local. Grato.</span>
+    <button class="btCopiar">Copiar</button>
+  </div>
+  
+  <!--************************ PRÓXIMA EVOLUÇÃO ************************-->
+
+  <div class="textoEvolucoes">
+    <textarea class="textoEvol" placeholder="Área de evolução..." cols="45" rows="5"></textarea>
+    <textarea class="textoRascunho" placeholder="Texto para rascunho..."  cols="45" rows="5"></textarea>
+    <button class="btSelect">Ctrl-c p/ selecionar</button>
+  </div>
+  <script type="text/javascript" src="js/script.js"></script>
+
 </body>
 </html>
