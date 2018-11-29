@@ -33,6 +33,8 @@ entrada.addEventListener("keyup",myFunction);
 window.onload = function() {
 	var local = localStorage.getItem("pcmg");
 	pcmg = JSON.parse(local);
+	pcmg.servidores.sort(compareNome);
+	pcmg.servidores.sort(compareDP);
 	var numServ = pcmg.servidores.length;
 	var node, linha, textNode;
 
@@ -74,3 +76,28 @@ window.onload = function() {
 	}
 	
 };
+
+function compareDP(a,b) {
+	
+	if(a.delegacia < b.delegacia){
+		return -1;
+	}
+	if(a.delegacia > b.delegacia){
+		return 1;
+	}
+
+	return 0;
+}
+
+function compareNome(a,b) {
+	
+	if(a.nome < b.nome){
+		return -1;
+	}
+	if(a.nome > b.nome){
+		return 1;
+	}
+
+	return 0;
+}
+
