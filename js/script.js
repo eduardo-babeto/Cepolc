@@ -4,7 +4,10 @@ var select03 = document.getElementsByClassName("evolucoes")[0].getElementsByTagN
 var areaTexto = document.getElementsByClassName("textoEvolucoes")[0].getElementsByTagName("textarea")[0];
 var btSelecionar = document.getElementsByClassName("btSelect")[0];
 var btCopiar = document.getElementsByClassName("btCopiar");
+var btSalvar = document.getElementsByClassName("btSave")[0];
+var btLimpar = document.getElementsByClassName("btClear")[0];
 var camposMasp = document.getElementsByClassName("campoMasp");
+var areaRascunho = document.getElementsByClassName("textoEvolucoes")[0].getElementsByTagName("textarea")[1];
 
 var pcmg;
 
@@ -14,6 +17,7 @@ window.addEventListener("load",function(){
   var local = localStorage.getItem("pcmg");  
   pcmg = JSON.parse(local);
   atualiza_campos();
+  atualiza_rascunho();
 });
 
 select01.addEventListener("change",function(){
@@ -147,6 +151,23 @@ for (var i = 0; i < camposMasp.length;i++){
       e.target.previousElementSibling.value = pesquisa_masp(m);      
     }    
   });
+}
+
+btSalvar.addEventListener("click",function(){
+  localStorage.setItem("rascunho",areaRascunho.value);
+  console.log("Rascunho foi salvo!");
+});
+
+btLimpar.addEventListener("click",function(){  
+  areaRascunho.value="";
+});
+
+function atualiza_rascunho(){  
+  var rascunho = localStorage.getItem("rascunho");
+  if(rascunho !=null) {
+    areaRascunho.value = rascunho;
+    console.log(rascunho);
+  }
 }
 
 function pesquisa_masp(m){  

@@ -35,6 +35,7 @@ window.onload = function() {
 	pcmg = JSON.parse(local);
 	pcmg.servidores.sort(compareNome);
 	pcmg.servidores.sort(compareDP);
+	localStorage.setItem("pcmg",JSON.stringify(pcmg));
 	var numServ = pcmg.servidores.length;
 	var node, linha, textNode;
 
