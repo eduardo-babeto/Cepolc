@@ -74,9 +74,3 @@ window.onload = function() {
 	}
 	
 };
-
-/*
-
-pcmg = {servidores:[
-		{nome:"Honório",masp:"258851",cargo:"Investigador",delegacia:"DHPP/BH",telefone:"99398-6262"}]};
-*/
