@@ -1,0 +1,94 @@
+* {
+
+	margin:	0px;
+	padding: 0px;
+}
+
+body {
+
+
+}
+
+
+nav {
+
+
+
+}
+
+
+nav ul {
+	list-style-type:	none;
+	background-color:	#222;	
+}
+
+nav ul li {
+	display:			inline-block;
+	padding:			10px 25px;
+}
+
+nav a {
+	text-decoration:	none;
+	color:				#ddd;
+}
+
+nav li:hover{
+
+	background-color:	#555;
+}
+
+div.evolucoes, div.dados {
+
+	
+	margin:				30px 5%;
+	padding:			30px;
+	background-color:	#dadada;
+	border:				1px solid gray;
+
+}
+
+div.evolucoes select, div.evolucoes input, div.evolucoes button, div.textoEvolucoes button {
+
+	padding:			5px 10px;
+	
+}
+
+div.textoEvolucoes textarea {
+	padding:			10px;
+	width:				40%;	
+}
+
+div.textoEvolucoes textarea:nth-child(1) {
+	margin-left:		5%;
+}
+
+div.textoEvolucoes textarea:nth-child(2) {
+	margin:				2% 5% 0 5%;	
+}
+
+div.textoEvolucoes button {
+	margin:				2% 0 0 5%;
+}
+
+div.dados input {
+	padding:			15px;
+	width:				95%;
+	margin:				1% 1%;	
+	border:				1px solid #bbb;
+	font-size:			15px;
+}
+
+div.dados button {
+	padding:			7px;
+	margin:				1% 1% 0 1%;
+	font-size:			15px;
+}
+
+div.dados h2 {
+	text-align:			center;
+	border-bottom:		1px solid #777;
+	font-size:			1.8em;
+	padding:			6px 0;
+	margin:				0 4% 1% 1%;
+	font-family:		helvetica;
+}
