@@ -28,7 +28,6 @@ function myFunction(){
 	}
 	console.log("digitou");
 }
-
 entrada.addEventListener("keyup",myFunction);
 window.onload = function() {
 	var local = localStorage.getItem("pcmg");
@@ -49,6 +48,7 @@ window.onload = function() {
 	for(var i=0;i< numServ;i++){
 
 	  linha = document.createElement("tr");
+	  linha.classList.add("vr");
 	  node = document.createElement("td");
 	  textNode = document.createTextNode(pcmg.servidores[i].nome);
 	  node.appendChild(textNode);
