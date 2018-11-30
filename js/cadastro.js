@@ -17,26 +17,20 @@ btCadastrar.addEventListener('click',function(){
 	registros = pcmg.servidores.length;
 	console.log("Número de registros: "+ registros);
 	console.log("Ultimo servidor: "+pcmg.servidores[registros-1].nome);
-	localStorage.setItem("pcmg",JSON.stringify(pcmg));
-	//alert(JSON.stringify(pcmg));
-	//pcmg.servidores.pop();
-	//localStorage.setItem("pcmg",JSON.stringify(pcmg));
+	localStorage.setItem("pcmg",JSON.stringify(pcmg));	
 	alert("Servidor cadastrado!");
-	//console.log("clicou!");
-	//localStorage.removeItem("pcmg");
-	
+		
 });
 
 window.onload = function(){
-	
+	//localStorage.removeItem("pcmg");
 	var local = localStorage.getItem("pcmg");
 	var lista;
 	if (local == null) {
 	    console.log("Lista vazia, criar outra");
-	    pcmg = {servidores:[
-		{nome:"Pessoas",masp:"masp",cargo:"Cargo",delegacia:"Delegacia",telefone:"xxxxx-xxxx"}]};
-	   lista = JSON.stringify(pcmg);    
-	   localStorage.setItem("pcmg",lista);
+	    inicia_lista();
+	    lista = JSON.stringify(pcmg);    
+	    localStorage.setItem("pcmg",lista);
 	}
 	else{
 		console.log("Existem itens na lista");	
@@ -44,11 +38,12 @@ window.onload = function(){
 	}
 };
 
+function inicia_lista(){
+	pcmg = {servidores:[{nome:"Pessoas",masp:"masp",cargo:"Cargo",delegacia:"Delegacia",telefone:"xxxxx-xxxx"}]};	
+}
 
-
-
-
-
-
-
+//alert(JSON.stringify(pcmg));
+//pcmg.servidores.pop();
+//localStorage.setItem("pcmg",JSON.stringify(pcmg));
+// pcmg = {servidores:[{nome:"Pessoas",masp:"masp",cargo:"Cargo",delegacia:"Delegacia",telefone:"xxxxx-xxxx"}]};
 

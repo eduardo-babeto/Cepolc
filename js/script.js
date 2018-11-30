@@ -20,6 +20,10 @@ window.addEventListener("load",function(){
   atualiza_rascunho();
 });
 
+window.addEventListener("resize",function(){
+  console.log("largura:"+window.innerWidth);
+});
+
 select01.addEventListener("change",function(){
   atualiza_campos();
 });
